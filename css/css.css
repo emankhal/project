@@ -1,0 +1,262 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .loginl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .login .container{
+  display: flex;
+  }
+  @media (max-width: 768px) {
+    .login .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+  }
+  .loginl {
+    width: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginl .cotain{
+    margin: 20px;
+  }
+  
+}
+
+  .loginl .cotain{
+    position: relative;
+    width: fit-content;
+    border: none;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(160, 152, 152, 0.2);
+  }
+  .loginl .cotain .icons{
+    text-align: center;
+  }
+  .loginl .cotain .icons h3{
+font-size: 18px;
+  }
+  .loginl .cotain .icons i{
+    border: 1px solid #E2E8F0;
+    padding: 15px;
+    font-size: 20px;
+    margin-right: 5px;
+    border-radius: 8px;
+  }
+ form label{
+    font-size: 18px;
+  }
+  form input{
+    margin: 10px auto;
+    padding: 8px 5px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    
+    width: 100%;
+  }
+  
+  .toggle {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin:10px;
+  }
+  
+  .toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle .onoff {
+    color: #000000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    transition: 0.4s;
+    top: 4px;
+    left:25px;
+    
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(-20px);
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  .slider.round::before {
+    border-radius: 20px;
+  }
+  .loginl button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    background-color: #229CD6;
+    color: white;
+    font-size: 15px;
+}
+/*loginr*/
+
+  .loginr{
+    background:url('/img/img1.png');
+    height: 100vh;
+    width: 50%;
+    padding: 25px 60px;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+.loginr .content{
+  margin-bottom: 100px;
+  color: white;
+  text-align: right;
+  line-height: px;
+ 
+}
+@media (max-width: 768px) {
+  .loginr{
+    width: 100%;
+}
+}
+@media (max-width: 768px) {
+  .loginr .content , .text{
+    text-align: center;
+  }
+}
+
+.content img{
+    width: 80px;
+}
+ .content h3{
+   font-size: 20px;
+     margin: 0;
+}
+ .content h4{
+   font-size: 10px;
+     margin: 0;
+}
+.loginr .text h1 , p{
+    color: #ffffff;
+
+}
+.loginr .text h1{
+    width: 100%;
+    font-size: 50px;
+}
+.loginr .text p{
+    width: 100%;
+    font-size: 30px;
+}
+
+
+ hr{
+  width: 180px;
+  float: right;
+  text-align: center;
+  margin: 20px 0;
+  color: ghostwhite;
+}
+/* Start Sidebar */
+.sidebar {
+  width: 350px;
+  box-shadow: 0 0 10px #ddd;
+  height: 100vh;
+  padding: 40px;
+}
+
+.sidebar ul li {
+  transition: 0.3s;
+  margin-bottom: 5px;
+  
+}
+.content .logoo{
+width: 120px;
+}
+.sidebar ul li button{
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  border-radius: 24px;
+  color: #8E92BC;
+  text-align: right;
+  transition: .2s;
+}
+.sidebar ul li button.one {
+  background-color: #82BD40;
+  color: white;
+}
+.sidebar ul li button .one ,.sidebar ul li button:hover{
+  background-color: #82BD40;
+  color: white;
+  transition: .3s;
+}
+.sidebar ul li button i{
+  margin-left: 13px;
+}
+ul{
+  margin-top: 20px;
+  list-style-type: none;
+  padding:  0;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #f6f6f6;
+}
+.sidebar ul li a span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    width: 58px;
+    padding: 10px;
+  }
+  .sidebar > h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .sidebar > h3::before,
+  .sidebar > h3::after {
+    display: none;
+  }
+  .sidebar ul li a span {
+    display: none;
+  }
+}
