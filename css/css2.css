@@ -3,6 +3,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+  i{
+    cursor: pointer;
+  }
+  button{
+    cursor: pointer;
+  }
   .page{
     display: flex;
   }
@@ -101,10 +107,6 @@ ul{
     font-size: 13px;
     margin-bottom: 15px;
   }
-  .sidebar > h3::before,
-  .sidebar > h3::after {
-    display: none;
-  }
   .sidebar ul li a span {
     display: none;
   }
@@ -182,10 +184,10 @@ ul{
         width: 100%;
       }
       .data{
-        background-color: #f7fafc;
         height: calc(150vh - 80px);
       }
       .data .title{
+        background-color: #f7fafc;
         display: flex;
     justify-content: space-around;
     align-items: center;
@@ -212,4 +214,73 @@ ul{
       .data .title .btn1 i ,.btn2 i{
         margin-left: 10px;
       }
-   
+
+
+
+      .members .catecory{
+        background-color: white;
+        margin-right: 5px;
+      }
+      .members .catecory .searchh{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+      }
+      .members .catecory .searchh input{
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 18px;
+        border: none;
+        background-color: #F9F9F9;
+        color: #878CBD;
+      }
+      .members .catecory .searchh input ::placeholder{
+        color:#878CBD ;
+      }
+      select{
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 18px;
+        border: none;
+        background-color: #F9F9F9;
+        color: #878CBD;
+        width: 200px;
+      }
+      select option{
+        padding: 15px;
+        font-size: 18px;
+        margin-top: 7px;
+      }
+      
+      select:focus{
+        outline:none;
+        padding: 15px;
+        font-size: 15px;
+        
+      }
+
+      .members .catecory .searchh i{
+        position: relative;
+        left: 40px;
+
+      }
+      table{
+        padding: 42px 0;
+        width: 100%;
+        text-align: center;
+      }   
+      thead{
+        color: #B5B7C0;
+      }
+
+      tbody tr .names{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      tbody tr .names h3{
+        margin-right: 15px
+      }
